@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(13, 13, 90);
+    text-align: center;
+    min-height: 100vh;
+}
+h1{
+    color: yellow;
+    display: flex;
+    font-size: 5rem;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center; 
+    padding: 3rem 2rem;
+    margin: 3rem 2rem;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;  
+}
+.box{
+    display: flex;
+    height: 12rem;       
+    width: 12rem;
+    justify-self: center;
+    align-items: center;
+    border: 10px solid black;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+.r{
+    background-color: red;
+    justify-self: flex-end;
+}
+.b{
+    background-color: blue;
+    justify-self: flex-end;
+}
+.g{
+    background-color: green;
+    justify-self: flex-start;
+}
+.y{
+    background-color: yellow;
+    justify-self: flex-start;
+}
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+.pressed {
+    box-shadow: 0 0 20px white !important;
+    background-color: grey !important;
+}
+.bot-pressed {
+    box-shadow: 0 0 20px white!important;
+    background-color: rgb(0, 97, 139)!important;
+}
