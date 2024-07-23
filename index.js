@@ -55,8 +55,13 @@ function gamePlay() {
 }
 
 function wrongInput() {
+    document.getElementsByTagName("body")[0].classList.add("red");
+    console.log(document.getElementsByTagName("body"));
     const wrongInput = new Audio("./sounds/wrong.mp3");
     wrongInput.play();
+    setTimeout(function(){
+        document.getElementsByTagName("body")[0].classList.remove("red");
+    }, 300);
 }
 
 function inputOccurred(eventKey) {

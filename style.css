@@ -1,35 +1,72 @@
 body{
-    background-color: rgb(13, 13, 90);
+    background-color: #fbfbf2;
     text-align: center;
-    min-height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 8vw;
+    min-height: 4vmax;
+    background-color: #cfd2cd;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: space-evenly;
+    align-content: center;
+}
+footer{
+    height: 30vh;
+    background-color: #cfd2cd;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+header > *{
+    padding-left: 2rem;
+    color: black;
+    font-size: 2vw;
+}
+header > .logo{
+    height: 100%;
+    box-shadow: #cfd2cd;
+    border-radius: 5%;
+    /* padding: 1em; */
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 h1{
-    color: yellow;
+    color: 191918;
     display: flex;
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Press Start 2P', cursive;
     justify-content: center; 
-    padding: 3rem 2rem;
-    margin: 3rem 2rem;
+    margin: 3vw 0   ;
 }
 .boxes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 3rem;  
+    gap: 3vw;  
 }
 .box{
     display: flex;
-    height: 12rem;       
-    width: 12rem;
+    height: 20vw;
+    width: 20vw;
     justify-self: center;
     align-items: center;
-    border: 10px solid black;
-    border-radius: 3rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
+    border: 2vw solid #323230;
+    border-radius: 3vw;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    -ms-border-radius: 3vw;
+    -o-border-radius: 3vw;
 }
 .r{
     background-color: red;
@@ -52,10 +89,49 @@ h1{
     opacity: 0.8;
 }
 .pressed {
-    box-shadow: 0 0 20px white !important;
+    box-shadow: 0 0 5vmax goldenrod !important;
     background-color: grey !important;
 }
 .bot-pressed {
-    box-shadow: 0 0 20px white!important;
-    background-color: rgb(0, 97, 139)!important;
+    box-shadow: 0 0 3vmax darkorange!important;
+    background-color: white!important;
 }
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .social-meida{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media > icon{
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+  }
+  .social-media > * {
+    /* background-color: ; */
+    padding: 0vw 1vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center ;
+  }
+  .instructions{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+  }
+  .red{
+    background-color: rgb(255, 0, 0);
+  }
