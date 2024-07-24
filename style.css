@@ -6,7 +6,6 @@ header{
     display: flex;
     align-items: center;
     height: 8vw;
-    min-height: 4vmax;
     background-color: #cfd2cd;
 }
 .content{
@@ -25,10 +24,13 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 2vw;
+    position: absolute;
+    width: 100%;
 }
 header > *{
     padding-left: 2rem;
     color: black;
+    width: fit-content  ;
     font-size: 2vw;
 }
 header > .logo{
@@ -114,8 +116,8 @@ h1{
     align-items: center;
   }
   .social-media > icon{
-    height: 20px;
-    width: 20px;
+    height: 1em;
+    width: 1em;
     background-color: #000;
   }
   .social-media > * {
@@ -125,13 +127,19 @@ h1{
     align-items: center;
     justify-content: center ;
   }
-  .instructions{
+  .instruction{
     height: 50vh;
     display: flex;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     text-align: start;
+    font-size: 1vw;
   }
   .red{
     background-color: rgb(255, 0, 0);
+  }
+  ol, ul, li{
+    padding: 0;
+    margin: 0;
   }
